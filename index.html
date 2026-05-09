@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Web Portfolio</title>
+  </head>
+  <body class="bg-[#03001C]">
+    <header class="sticky top-0 z-50">
+      <div class="bg-[#03001C]/80">
+        <nav
+          class="text-white flex flex-col md:flex-row justify-between px-[15%] py-4 items-center gap-3 md:gap-0"
+        >
+          <h2 class="font-semibold">Naufal</h2>
+          <ul class="flex gap-6 flex-wrap justify-center">
+            <li>
+              <a
+                href="#home"
+                class="nav-link hover:text-[#B6EADA] transition-all"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="nav-link hover:text-[#B6EADA] transition-all"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="nav-link hover:text-[#B6EADA] transition-all"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="nav-link hover:text-[#B6EADA] transition-all"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="px-6 md:px-[15%]">
+      <div class="flex flex-col">
+        <section
+          id="home"
+          class="min-h-screen flex flex-col justify-center items-center"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="flex flex-col gap-4">
+              <h2
+                class="text-white text-2xl font-bold text-center md:text-left"
+              >
+                Halo, saya
+                <span class="text-[#5B8FB9]">Muhammad Naufal Fuadi</span>
+              </h2>
+
+              <p class="text-white text-center md:text-left">
+                Seorang Mahasiswa Sistem Informasi yang memiliki ketertarikan
+                dalam pengembangan website.
+              </p>
+
+              <a
+                href="#contact"
+                class="w-fit mx-auto md:mx-0 text-[#5B8FB9] text-xl font-bold rounded-xl p-3 border-2 border-[#5B8FB9] hover:bg-[#B6EADA] hover:text-[#03001C] transition-all"
+              >
+                Contact Me
+              </a>
+            </div>
+            <div
+              class="bg-white/20 border border-white/25 rounded-xl text-white p-6 flex items-center justify-center relative py-15"
+            >
+              <p id="joke">"joke"</p>
+              <button
+                id="refresh-joke"
+                class="absolute bottom-4 right-4 px-3 py-2 rounded-lg border border-white/25 bg-white/10 hover:bg-white/20 transition"
+              >
+                ↻
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="about"
+          class="min-h-screen flex flex-col justify-center items-center"
+        >
+          <h2
+            class="text-[#5B8FB9] text-3xl md:text-5xl font-bold text-center mb-5"
+          >
+            About Me
+          </h2>
+          <p class="text-white">
+            Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan
+            pada pengembangan website. Saat ini saya fokus mempelajari
+            pengembangan website menggunakan HTML, CSS, dan JavaScript, serta
+            terus mengembangkan kemampuan dalam menciptakan tampilan dan fitur
+            website yang interaktif.
+          </p>
+        </section>
+
+        <section
+          id="skills"
+          class="min-h-screen flex flex-col justify-center items-center"
+        >
+          <h2
+            class="text-[#5B8FB9] text-3xl md:text-5xl font-bold text-center mb-5"
+          >
+            My Skills
+          </h2>
+          <div
+            class="text-white flex gap-5 flex-wrap justify-center items-center"
+          >
+            <div
+              class="bg-white/20 border border-white/25 rounded-xl flex flex-col justify-center items-center w-30 h-30 text-center"
+            >
+              <img src="./img/HTML5.png" class="w-15" />
+              <h3>HTML</h3>
+            </div>
+
+            <div
+              class="bg-white/20 border border-white/25 rounded-xl flex flex-col justify-center items-center w-30 h-30 text-center"
+            >
+              <img src="./img/CSS.png" class="w-13" />
+              <h3>CSS</h3>
+            </div>
+
+            <div
+              class="bg-white/20 border border-white/25 rounded-xl flex flex-col justify-center items-center w-30 h-30 text-center"
+            >
+              <img src="./img/JavaScript.png" class="w-15" />
+              <h3>JavaScript</h3>
+            </div>
+
+            <div
+              class="bg-white/20 border border-white/25 rounded-xl flex flex-col justify-center items-center w-30 h-30 text-center"
+            >
+              <img src="./img/TailwindCSS.png" class="w-15" />
+              <h3>Tailwind CSS</h3>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          class="min-h-screen flex flex-col justify-center items-center"
+        >
+          <h2
+            class="text-[#5B8FB9] text-3xl md:text-5xl font-bold text-center mb-5"
+          >
+            Contact Me
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-start w-full">
+            <div class="bg-white/20 border border-white/25 rounded-xl p-[10%]">
+              <h3
+                class="text-2xl md:text-3xl font-bold text-[#5B8FB9] mbe-5 text-center"
+              >
+                Send Me a Message
+              </h3>
+              <form class="flex flex-col gap-5">
+                <div>
+                  <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Your Name"
+                    class="text-white w-full p-3 border border-[#cbd5e1] rounded-lg outline-none"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    class="text-white w-full p-3 border border-[#cbd5e1] rounded-lg outline-none"
+                  />
+                </div>
+
+                <div>
+                  <textarea
+                    id="pesan"
+                    name="pesan"
+                    placeholder="Your Message"
+                    class="text-white w-full p-3 border border-[#cbd5e1] rounded-lg h-32 outline-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="bg-[#5B8FB9] text-white px-10 py-4 rounded-xl font-bold hover:bg-[#B6EADA] hover:text-[#03001C] transition-all w-full"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+            <div class="bg-white/20 border border-white/25 rounded-xl p-[10%]">
+              <h3
+                class="text-2xl md:text-3xl font-bold text-[#5B8FB9] mbe-5 text-center"
+              >
+                Connect With Me
+              </h3>
+              <div class="text-white flex gap-5 flex-wrap justify-center">
+                <a
+                  href="#"
+                  class="bg-white/20 border border-white/25 rounded-xl flex flex-col justify-center items-center w-15 h-15 text-center"
+                >
+                  <img src="./img/LinkedIn.png" class="w-7" />
+                </a>
+
+                <a
+                  href="#"
+                  class="bg-white/20 border border-white/25 rounded-xl flex flex-col justify-center items-center w-15 h-15 text-center"
+                >
+                  <img src="./img/GitHub.png" class="w-7" />
+                </a>
+
+                <a
+                  href="#"
+                  class="bg-white/20 border border-white/25 rounded-xl flex flex-col justify-center items-center w-15 h-15 text-center"
+                >
+                  <img src="./img/Instagram.png" class="w-7" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
